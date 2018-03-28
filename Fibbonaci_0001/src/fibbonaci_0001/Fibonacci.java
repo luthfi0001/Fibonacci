@@ -1,4 +1,3 @@
-
 package fibbonaci_0001;
 
 import java.util.Scanner;
@@ -10,8 +9,9 @@ public class Fibonacci {
         System.out.print("Input :  ");
         int n = show.nextInt();
         long bil[] = new long[n];
+        long temp = 0;
          
-        bil[0] = 0;
+        bil[0] = 1;
         bil[1] = 1;
          
         for(int i = 2; i < n; i++) {
@@ -19,10 +19,12 @@ public class Fibonacci {
         }
          
         System.out.println();
-        System.out.println("Output :");
-        for (int i = 0; i < n; i++) {           
-            System.out.print(bil[i] +  " ");
+        System.out.print("Output :");
+        for (int i = 0; i < n; i++) {  
+            temp = temp + bil[i];
+        }
+            System.out.println(temp);
+            
         }
     }
  
-}
