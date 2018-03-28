@@ -11,7 +11,7 @@ public class Fibonacci {
         int n = show.nextInt();
         long bil[] = new long[n];
          
-        bil[0] = 0;
+        bil[0] = 1;
         bil[1] = 1;
          
         for(int i = 2; i < n; i++) {
